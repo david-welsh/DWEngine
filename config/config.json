@@ -1,0 +1,13 @@
+{
+    "masterVolume": 0.5,
+    "musicVolume": 0.1,
+    "sfxVolume": 0.5,
+    
+    "screenRes": {
+        "width": 1280,
+        "height": 720
+    },
+    "fpsCap": 60,
+    
+    "gameTitle": "DWEngine test"
+}

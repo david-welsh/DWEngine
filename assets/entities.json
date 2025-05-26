@@ -1,0 +1,86 @@
+{
+    "entities": [
+        {
+            "id": "player",
+            "type": "ENTITY_PLAYER",
+            "tags": ["player"],
+            "components": {
+                "PositionComponent": {"x": 10, "y": 200},
+                "VelocityComponent": {"vx": 0, "vy": 0, "maxV": 500},
+                "AccelerationComponent": {"a": 0.04},
+                "GravityComponent": {"gForce": 980.0},
+                "RenderableComponent": {"assetId": "player-sprite"},
+                "AnimationComponent": {"currentAnimation": "idle"},
+                "CollidableComponent": {"width": 100, "height" : 250, "isSolid": false, "isMovable": true},
+                "InputComponent": {"jumpPower": -500 },
+                "FrictionComponent": {"friction": 1000, "airFriction": 100},
+                "SoundComponent": {},
+                "SpriteComponent": { "idle": "idle", "left": "walk_left", "right": "walk_right" }
+            }
+        },
+        {
+            "id": "camera",
+            "type": "ENTITY_CAMERA",
+            "tags": ["camera"],
+            "components": {
+                "PositionComponent": {"x": 0, "y": 0},
+                "VelocityComponent": {"vx": 0, "vy": 0, "maxV": 50},
+                "CameraComponent": { "width": 1280, "height": 720 }
+            }
+        },
+        {
+            "id": "enemy",
+            "type": "ENTITY_ENEMY",
+            "tags": [],
+            "components": {
+                "PositionComponent": {"x": 500, "y": 200},
+                "VelocityComponent": {"vx": 0, "vy": 0, "maxV": 250},
+                "AccelerationComponent": {"a": 0.5},
+                "GravityComponent": {"gForce": 980.0},
+                "RenderableComponent": {"assetId": "enemy-sprite"},
+                "AnimationComponent": {"currentAnimation": "idle"},
+                "CollidableComponent": {"width": 100, "height" : 100, "isSolid": false, "isMovable": true},
+                "FrictionComponent": {"friction": 1000, "airFriction": 100},
+                "SoundComponent": {},
+                "SpriteComponent": { "idle": "idle", "left": "walk_left", "right": "walk_right" },
+                "IntelligenceComponent": { "scriptAsset": "enemy" }
+            }
+        },
+        {
+            "id": "enemy2",
+            "type": "ENTITY_ENEMY",
+            "tags": [],
+            "components": {
+                "PositionComponent": {"x": 500, "y": 200},
+                "VelocityComponent": {"vx": 0, "vy": 0, "maxV": 250},
+                "AccelerationComponent": {"a": 0.5},
+                "GravityComponent": {"gForce": 980.0},
+                "RenderableComponent": {"assetId": "enemy-sprite"},
+                "AnimationComponent": {"currentAnimation": "idle"},
+                "CollidableComponent": {"width": 100, "height" : 100, "isSolid": false, "isMovable": true},
+                "FrictionComponent": {"friction": 1000, "airFriction": 100},
+                "SoundComponent": {},
+                "SpriteComponent": { "idle": "idle", "left": "walk_left", "right": "walk_right" },
+                "IntelligenceComponent": { "scriptAsset": "enemy2" }
+            }
+        },
+        {
+            "id": "floor",
+            "type": "ENTITY_WALL",
+            "tags": [],
+            "components": {
+                "PositionComponent": {"x": 0, "y": 0},
+                "RenderableComponent": {"assetId": "floor-sprite"},
+                "CollidableComponent": {"width": 2560, "height": 100, "isSolid": true, "isMovable": false}
+            }
+        },
+        {
+            "id": "music",
+            "type": "ENTITY_MUSIC",
+            "tags": [],
+            "components": {
+                "MusicComponent": { "music": "music" }
+            }
+        }
+    ]
+}

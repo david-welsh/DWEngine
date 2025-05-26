@@ -1,0 +1,115 @@
+{
+    "sprites": [
+        {
+            "id": "player-sprite",
+            "type": "ASSET_SPRITE_SHEET",
+            "path": "sprites/Player_sprite.png",
+            "data": {
+                "rows": 5,
+                "columns": 4,
+                "animations": [
+                    {
+                        "id": "idle",
+                        "from": 0,
+                        "to": 0
+                    },
+                    {
+                        "id": "walk_right",
+                        "from": 2,
+                        "to": 9
+                    },
+                    {
+                        "id": "walk_left",
+                        "from": 11,
+                        "to": 18
+                    }
+                ]
+            }
+        },
+        {
+            "id": "enemy-sprite",
+            "type": "ASSET_SPRITE_SHEET",
+            "path": "sprites/Enemy_sprite.png",
+            "data": {
+                "rows": 4,
+                "columns": 3,
+                "animations": [
+                    {
+                        "id": "idle",
+                        "from": 0,
+                        "to": 0
+                    },
+                    {
+                        "id": "walk_left",
+                        "from": 5,
+                        "to": 9
+                    },
+                    {
+                        "id": "walk_right",
+                        "from": 0,
+                        "to": 4
+                    }
+                ]
+            }
+        },
+        {
+            "id": "floor-sprite",
+            "type": "ASSET_SPRITE_SHEET",
+            "path": "sprites/floor.png",
+            "data": {
+                "rows": 1,
+                "columns": 1,
+                "animations": [
+                ]
+            }
+        }
+    ],
+    "music": [
+        {
+            "id": "music",
+            "type": "ASSET_MUSIC",
+            "path": "sounds/music.wav",
+            "data": {
+            }
+        },
+        {
+            "id": "music",
+            "type": "ASSET_MUSIC",
+            "path": "sounds/music.wav",
+            "data": {
+            }
+        }
+    ],
+    "sounds": [
+        {
+            "id": "jump",
+            "type": "ASSET_SOUND",
+            "path": "sounds/jump-sfx.wav",
+            "data": {
+            }
+        },
+        {
+            "id": "enemy",
+            "type": "ASSET_SOUND",
+            "path": "sounds/enemy-sound.wav",
+            "data": {
+            }
+        }
+    ],
+    "scripts": [
+        {
+            "id": "enemy",
+            "type": "ASSET_SCRIPT",
+            "path": "scripts/enemy.lua",
+            "data": {
+            }
+        },
+        {
+            "id": "enemy2",
+            "type": "ASSET_SCRIPT",
+            "path": "scripts/enemy2.lua",
+            "data": {
+            }
+        }
+    ]
+}
